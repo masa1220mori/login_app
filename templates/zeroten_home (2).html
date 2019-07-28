@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0,
+          minimum-scale=1.0">
+    <title>会員サイト</title>
+    <style type="text/css">
+        @media screen and (max-width: 750px){
+  .header{
+    color:#fafdff;
+    background-color:#24140e;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:50px;
+    vertical-align: middle;
+}
+            h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
+    }
+    a{
+        font-size: 13px;
+    }
+
+    .main{
+        text-align: center;
+        margin:0;
+        padding:0;
+    }
+    .btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #24140e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #384154;
+  border-radius: 3px;
+  margin:5px;
+  width:35%;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+  .news {
+    display: inline-block;
+    text-align:center;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #24140e;/*文字色*/
+    background: #FFF;
+    border: solid 3px #24140e;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width:50%;
+}
+.news p {
+    margin: 0; 
+    padding: 0;
+}
+.news h1 {
+    margin: 0; 
+    padding: 0;
+}
+        }
+
+        @media screen and (min-width: 770px) {
+             .btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #24140e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #384154;
+  border-radius: 3px;
+  margin:5px;
+}
+              .btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+                .news {
+    display: inline-block;
+    text-align:center;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #24140e;/*文字色*/
+    background: #FFF;
+    border: solid 3px #24140e;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width:50%;
+}
+                 .news p {
+    margin: 0; 
+    padding: 0;
+}
+               .news h1 {
+    margin: 0; 
+    padding: 0;
+}
+            h1{
+                font-size: 40px;
+                }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+        a{
+         font-size: 15px;
+        }
+    .   main{
+            text-align: center;
+        }
+        }
+
+</style>
+</head>
+<body>
+<div class="main">
+<div class="header"><h1>会員サイト</h1></div>
+<h2>ログインに成功しました!</h2>
+<div class="news">
+   <h1>News（スプレッドシートから新着情報を持ってくる）</h1>
+   <p>({{time1}}) {{news1}}</p>
+   <p>({{time2}}) {{news2}}</p>
+   <p>[新着]({{time3}}) {{news3}}</p>
+</div>
+<div class="contents">
+<a href="/test/protected" class="btn-square">2019年7月の実績</a><br>
+<a href="/test/logout" class="btn-square">ログアウト</a><br>
+<a href="https://twitter.com/macha_iriiida" class="btn-square">疑問・質問・いちゃもんはこちら</a></div></div>
+
+</body>
+</html>

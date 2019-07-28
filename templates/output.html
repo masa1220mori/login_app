@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+          initial-scale=1.0,
+          minimum-scale=1.0">
+    <title>7月の実績</title>
+    <style type="text/css">
+        @media screen and (max-width: 480px){
+    .header{
+    color:#fafdff;
+    background-color:#24140e;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:50px;
+    vertical-align: middle;
+}
+        .header h1{
+        font-size: 25px;
+        color:#fafdff;
+        text-align:center
+    }
+            .user_result{
+            text-align: center;
+            width: 100%;
+            }
+        h1{
+        font-size: 20px;
+        color:#24140e;
+            }
+        h2{
+            font-size: 18px;
+            color:#24140e;
+        }
+        h3{
+            font-size: 13px;
+            color:#24140e;
+        }
+       .btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #24140e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #384154;
+  border-radius: 3px;
+  margin:5px;
+  width:35%;
+}
+        .btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+        }
+        @media screen and (min-width: 770px){
+             .btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #24140e;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #384154;
+  border-radius: 3px;
+  margin:5px;
+}
+              .btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+            .user_result{
+            text-align: center;
+            width: 100%;
+            }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 15px;
+        }
+        a{
+            font-size: 15px;
+        }
+            }
+</style>
+</head>
+<body>
+<div class="header"><h1>会員サイト</h1></div>
+<div class="user_result">
+    <h1>ユーザー番号{{ID}}<br>
+        {{name}}さんの7月の実績</h1>
+　<h2>ユーザーランク:{{UoRa}}</h2>
+    <h2>取引完了個数<br>{{NoS}}個</h2>
+    <h2>取引完了売上金額<br>{{SoS}}</h2>
+    <h2>報酬金額<br>{{UoR}}</h2>
+    <h2>取引未完了個数<br>{{UoC}}個</h2>
+    <h2>取引未完了売上金額<br>{{UoA}}</h2>
+    <h2>振込金額<br>{{ToA}}</h2>
+    <h3>※振込金額については、月末のメールにて詳細を送らせていただきます。</h3>
+    <a href="/test/login" class="btn-square">ホームへ</a>
+    <a href="/test/logout" class="btn-square">ログアウト</a>
+</div>
+</body>
+</html>
